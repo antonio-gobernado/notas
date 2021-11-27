@@ -1,0 +1,45 @@
+<%- include("partials/header") %>
+
+<div class="container">
+
+    <h2 class="text-center"> Escribe nueva entrada</h2>
+
+
+    <form method="POST" action="/nueva">
+
+        <div class="mb-3">
+
+            <label for="title">Titulo</label>
+            <input type="text" name="title" id="title" class="form-control" placeholder="escribe nueva entrada" required>
+        </div>
+
+        <label for="body">Descripcion</label>
+        <div class="mb-3">
+            
+            
+           <textarea name="body" id="body" cols="100" rows="5" required></textarea>
+        </div>
+
+        <div class="mb-3">
+
+            <label for="enlace">Enlace</label>
+            <input type="text" name="enlace" id="enlace" class="form-control" placeholder="escribe enlace" required>
+        </div>
+
+        <div class="mb-3">
+
+            <input type="submit" value=" Enter" class="btn btn-primary">
+
+        </div>
+
+
+
+    </form>
+       
+
+
+
+</div>
+
+
+<%- include("partials/footer") %>

@@ -1,0 +1,31 @@
+{
+    "name": "Notas para videos y paginas interesantes",
+    "short_name": "notas",
+    "start_url": "/",
+    "display": "standalone",
+    "background_color": "#FFE9D2",
+    "theme_color": "#FFE1C4",
+    "orientation": "portrait-primary",
+    "icons":[
+        {
+            "src": "/images/icons/icon-152x152.png",
+            "type": "image/png",
+            "sizes": "152x152"
+        },
+        {
+            "src": "/images/icons/icon-192x192.png",
+            "type": "image/png",
+            "sizes": "192x192",
+            "purpose": "any maskable"
+
+        },
+        {
+            "src": "/images/icons/icon-512x512.png",
+            "type": "image/png",
+            "sizes": "512x512"
+
+        }
+        
+    ]
+    
+}

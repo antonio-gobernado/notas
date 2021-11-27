@@ -1,0 +1,44 @@
+<%- include("partials/header") %>
+
+
+
+<div class="container-md">
+
+    <% if (entries.length) { %>
+
+    <% entries.forEach ( function (entry){ %>
+
+        <div class="card my-3">
+
+                <div class="card-header">
+
+                    <p><%= entry.publicado %></p>
+
+
+                </div>
+
+                <div class="card-body">
+
+                    <h1><%= entry.title %></h1>
+                    <h2><%= entry.content %></h2>
+                    <h2><%= entry.enlace %></h2>
+
+
+                </div>
+
+                <a href="/destroy/<%= entry.title %>" class="btn btn-danger"> Eliminar </a>
+
+
+
+        </div>
+
+        <hr><hr>
+
+<% })}else{ %>
+
+    <p> Ninguna entrada!! <a href="/entrada"> Agrega Entrada </a></p>
+
+<% } %>
+</div>
+
+<%- include("partials/footer") %>
